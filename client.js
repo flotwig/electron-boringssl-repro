@@ -3,6 +3,8 @@ const https = require('https')
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 
+console.log('Electron version:', process.versions.electron)
+
 https.request('https://localhost:7777', (res) => {
   res.on('data', (chunk) => {
     assert.strictEqual(chunk.toString(), 'it worked!')
