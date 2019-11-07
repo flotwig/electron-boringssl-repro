@@ -7,6 +7,8 @@ Currently does not error.
 
 https://github.com/cypress-io/cypress/issues/5446#issuecomment-549786711
 
-Run `electron index.js` to start.
+Run `node server.js` to start the test server.
+
+Run `electron client.js` to test.
 
 Check `gen-cert.sh` for the commands used to generate the sample cert.
